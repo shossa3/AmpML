@@ -1,6 +1,6 @@
 # Disease Classification using Convolutional Neural Networks and Mel Frequency Cepstral Coefficients 
 
-# Setup 
+# Overview
 
 This project uses the Respiratory Sound Database for disease classification by means of a Convolutional Neural Network (CNN) model architecture implemented in Keras using a Tensorflow backend. A simple sequential model was designed, consisting of four Conv2D convolution layers, with the final output layer being a dense layer. The convolution layers are designed for feature detection. It works by means of convolution - sliding a filter window over the input and performing a matrix multiplication and storing the result in a feature map. The filter parameter specifies the number of nodes in each layer. Each layer will increase in size from 16, 32, 64 to 128, while the kernel_size parameter specifies the size of the kernel window which in this case is 2 resulting in a 2x2 filter matrix.
 
@@ -20,4 +20,10 @@ The output layer will have 6 nodes (num_labels) which matches the number of poss
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
 
 
+# Setup 
+
+
+# Scripts 
+
+Classification.py contains the model implementation, data loading, and traning. Inference.py consists of an example of loading the model and running inference on example audio. 
 <img width="526" alt="Screenshot 2025-01-15 at 12 43 58 PM" src="https://github.com/user-attachments/assets/a291255e-8bdb-4288-ae32-0028baf6a7df" />
