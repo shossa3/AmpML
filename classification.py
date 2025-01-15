@@ -80,11 +80,9 @@ features1 = np.delete(features, np.where((labels == 'Asthma') | (labels == 'LRTI
 
 labels1 = np.delete(labels, np.where((labels == 'Asthma') | (labels == 'LRTI'))[0], axis=0)
 
-# print class counts
-unique_elements, counts_elements = np.unique(labels1, return_counts=True)
-print(np.asarray((unique_elements, counts_elements)))
-
 # plot class counts
+unique_elements, counts_elements = np.unique(labels1, return_counts=True)
+
 y_pos = np.arange(len(unique_elements))
 plt.figure(figsize=(12,8))
 plt.bar(unique_elements, counts_elements, align='center', alpha=0.5)
@@ -119,24 +117,19 @@ model.add(layers.Conv2D(filters=16, kernel_size=filter_size,
                  input_shape=(num_rows, num_columns, num_channels), activation='relu'))
 model.add(layers.MaxPooling2D(pool_size=2))
 model.add(layers.Dropout(0.2))
-
 model.add(layers.Conv2D(filters=32, kernel_size=filter_size, activation='relu'))
 model.add(layers.MaxPooling2D(pool_size=2))
 model.add(layers.Dropout(0.2))
-
 model.add(layers.Conv2D(filters=64, kernel_size=filter_size, activation='relu'))
 model.add(layers.MaxPooling2D(pool_size=2))
 model.add(layers.Dropout(0.2))
-
 model.add(layers.Conv2D(filters=128, kernel_size=filter_size, activation='relu'))
 model.add(layers.MaxPooling2D(pool_size=2))
 model.add(layers.Dropout(0.2))
-
 model.add(layers.GlobalAveragePooling2D())
-
 model.add(layers.Dense(num_labels, activation='softmax'))
 
-# Compile the model
+# Compile the model - using Adam optimizer 
 model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
 
 # Display model architecture summary
@@ -156,9 +149,6 @@ callbacks = [
     callbacks.ModelCheckpoint(
         filepath='mymodel2_{epoch:02d}.h5',
         # Path where to save the model
-        # The two parameters below mean that we will overwrite
-        # the current checkpoint if and only if
-        # the `val_accuracy` score has improved.
         save_best_only=True,
         monitor='val_accuracy',
         verbose=1)
@@ -212,7 +202,7 @@ ax.grid(alpha=.4)
 sns.despine()
 plt.show()
 
-# Classification Report
+# Classification metrics for evaluation 
 print(classification_report(y_testclass, classpreds, target_names=c_names))
 
 # Confusion Matrix
