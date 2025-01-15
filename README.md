@@ -22,7 +22,7 @@ The output layer will have 6 nodes (num_labels) which matches the number of poss
 
 # Setup 
 
-This project uses Python 3.7 and requires the installtion of the following packages: numpy, librosa, keras, tensorflow, pandas, sklearn, matplotlib, and seaborn. Place the audio and text files from the Respitory Sound Database in a folder named "audio". 
+This project uses Python 3.7 and requires the installtion of the following packages: numpy, librosa, keras, tensorflow, pandas, sklearn, matplotlib, and seaborn. Place the wav and text files from the Respitory Sound Database in a folder named "audio". 
 
 # Scripts 
 
