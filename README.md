@@ -17,7 +17,7 @@ The output layer will have 6 nodes (num_labels) which matches the number of poss
 
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
 
-
+'''
                precision    recall  f1-score   support
 
 Bronchiectasis       0.00      0.00      0.00         3
@@ -30,4 +30,4 @@ Bronchiectasis       0.00      0.00      0.00         3
       accuracy                           0.88       184
      macro avg       0.34      0.28      0.29       184
   weighted avg       0.85      0.88      0.86       184
-
+'''
