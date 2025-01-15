@@ -9,6 +9,40 @@ Each convolutional layer has an associated pooling layer of MaxPooling2D type wi
 
 The output layer will have 6 nodes (num_labels) which matches the number of possible classifications. The activation is for the output layer is softmax. Softmax makes the output sum up to 1 so the output can be interpreted as probabilities. The model will then make its prediction based on which option has the highest probability.
 
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ conv2d (Conv2D)                 │ (None, 39, 861, 16)    │            80 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d (MaxPooling2D)    │ (None, 19, 430, 16)    │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout (Dropout)               │ (None, 19, 430, 16)    │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_1 (Conv2D)               │ (None, 18, 429, 32)    │         2,080 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_1 (MaxPooling2D)  │ (None, 9, 214, 32)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_1 (Dropout)             │ (None, 9, 214, 32)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_2 (Conv2D)               │ (None, 8, 213, 64)     │         8,256 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_2 (MaxPooling2D)  │ (None, 4, 106, 64)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_2 (Dropout)             │ (None, 4, 106, 64)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_3 (Conv2D)               │ (None, 3, 105, 128)    │        32,896 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_3 (MaxPooling2D)  │ (None, 1, 52, 128)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_3 (Dropout)             │ (None, 1, 52, 128)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ global_average_pooling2d        │ (None, 128)            │             0 │
+│ (GlobalAveragePooling2D)        │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 6)              │           774 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+
 ![Figure_1](https://github.com/user-attachments/assets/1ae3485a-fa1e-428c-940d-21824bbf3250)
 
 
