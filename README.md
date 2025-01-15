@@ -19,5 +19,3 @@ The output layer will have 6 nodes (num_labels) which matches the number of poss
 
 
 <img width="526" alt="Screenshot 2025-01-15 at 12 43 58 PM" src="https://github.com/user-attachments/assets/a291255e-8bdb-4288-ae32-0028baf6a7df" />
-
-[[  0   0   2   0   1   0] <br /> [  0   0   1   0   0   2]<br /> [  0   1 157   0   1   0]<br /> [  0   1   3   1   1   1]<br /> [  0   0   3   0   4   0]<br /> [  1   2   1   1   0   0]]<br />
