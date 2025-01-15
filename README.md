@@ -17,17 +17,5 @@ The output layer will have 6 nodes (num_labels) which matches the number of poss
 
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
 
-'''
-               precision    recall  f1-score   support
 
-Bronchiectasis       0.00      0.00      0.00         3
- Bronchiolitis       0.00      0.00      0.00         3
-          COPD       0.94      0.99      0.96       159
-       Healthy       0.50      0.14      0.22         7
-     Pneumonia       0.57      0.57      0.57         7
-          URTI       0.00      0.00      0.00         5
-
-      accuracy                           0.88       184
-     macro avg       0.34      0.28      0.29       184
-  weighted avg       0.85      0.88      0.86       184
-'''
+<img width="526" alt="Screenshot 2025-01-15 at 12 43 58 PM" src="https://github.com/user-attachments/assets/a291255e-8bdb-4288-ae32-0028baf6a7df" />
