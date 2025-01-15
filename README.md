@@ -9,14 +9,15 @@ The first layer will receive the input shape of (40, 862, 1) where 40 is the num
 The output layer will have 6 nodes (num_labels) which matches the number of possible classifications. The activation is for the output layer is softmax. Softmax makes the output sum up to 1 so the output can be interpreted as probabilities. The model will then make its prediction based on which option has the highest probability.
 
 
+Spectogram of MFCCs: 
 ![Figure_1](https://github.com/user-attachments/assets/1ae3485a-fa1e-428c-940d-21824bbf3250)
 
 
-
+Distribution of classes:
 ![Figure_2](https://github.com/user-attachments/assets/16a8b7a5-758a-40f2-825a-2012f588c049)
 
 
-
+ROC Curves for each class: 
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
 
 
