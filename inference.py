@@ -30,7 +30,7 @@ def make_prediction(file_name):
         return None
 
 # Test the inference script on an example audio file
-file_name = 'example_audio_file.wav'
+file_name = 'example_audio.wav'
 predicted_class = make_prediction(file_name)
 
 if predicted_class is not None:
