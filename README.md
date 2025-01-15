@@ -17,7 +17,7 @@ Distribution of classes:
 ![Figure_2](https://github.com/user-attachments/assets/16a8b7a5-758a-40f2-825a-2012f588c049)
 
 
-ROC Curves for each class: 
+ROC Curves for each class - True Positive Rate vs False Positive Rate 
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
 
 Classification metrics: 
