@@ -15,7 +15,7 @@ Spectogram of MFCCs:
 
 # Training 
 
-The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the gradient descent process. 
+The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the gradient descent process. The loss function is categorical crossentropy and metric used is accuracy. 
 
 The distribution count of occurence of the different diseases shows that COPD is the most frequent diagnosis. 
 
