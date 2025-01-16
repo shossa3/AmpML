@@ -10,6 +10,9 @@ The first layer receives the input shape of (40, 862, 1) where 40 is the number 
 
 The output layer will have 6 nodes (num_labels) which matches the number of possible classifications. The activation is for the output layer is softmax. Softmax makes the output sum up to 1 so the output can be interpreted as probabilities. The model will then make its prediction based on which option has the highest probability.
 
+# Training 
+
+The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the stochastic gradient descent. 
 
 Spectogram of MFCCs: 
 ![Figure_1](https://github.com/user-attachments/assets/1ae3485a-fa1e-428c-940d-21824bbf3250)
