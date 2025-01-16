@@ -1,4 +1,4 @@
-# Diagnostic Categorization using Mel Frequency Cepstral Coefficients and using Convolutional Neural Networks
+# Diagnostic Categorization using Mel Frequency Cepstral Coefficients and Convolutional Neural Networks
 
 # Overview
 
