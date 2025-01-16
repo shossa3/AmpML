@@ -15,7 +15,7 @@ Spectogram of MFCCs:
 
 # Training 
 
-The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the stochastic gradient descent. 
+The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the gradient descent process. 
 
 The distribution count of occurence of the different diseases shows that COPD is the most frequent diagnosis. 
 
@@ -25,6 +25,8 @@ Distribution of classes:
 
 ROC Curves for each class - True Positive Rate vs False Positive Rate 
 ![Figure_3](https://github.com/user-attachments/assets/a648d0e0-64c5-4c96-ae78-edf5adcc0c4d)
+
+I used the sklearn ROC extension to multiclass for this dataset.  <br /> 
 
 Classification metrics:  <br /> <img width="526" alt="Screenshot 2025-01-15 at 12 43 58 PM" src="https://github.com/user-attachments/assets/a291255e-8bdb-4288-ae32-0028baf6a7df" /> 
 
