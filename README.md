@@ -32,9 +32,10 @@ Classification metrics:
 
 # Setup 
 
-This project uses Python 3.7 and requires the installtion of the following packages: numpy, librosa, keras, tensorflow, pandas, sklearn, matplotlib, and seaborn. Place the wav and text files from the Respitory Sound Database in a folder named "audio". 
+This project uses Python 3.7 and requires the installtion of the following packages: numpy, librosa, keras, tensorflow, pandas, sklearn, matplotlib, and seaborn. Place the wav and text files from the Respitory Sound Database in a folder named "audio". First run the classification script which will generate the HDF5 file model files after training is completed. Once training is completed, you can specify the model name to load in the inference script and also replace the example audio file with one of your choosing.   
 
 # Scripts 
 
-Classification.py contains the model implementation, data loading, and traning. Inference.py consists of an example of loading the model and running inference on example audio. 
+Classification.py - contains the model implementation, data loading, and traning. 
+Inference.py - consists of an example of loading the model and running inference on example audio. 
 
