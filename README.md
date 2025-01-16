@@ -15,9 +15,7 @@ Spectogram of MFCCs:
 
 # Training 
 
-The data is split into training and testing sets. Using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the gradient descent process. The loss function is categorical crossentropy and metric used is accuracy. 
-
-The distribution count of occurence of the different diseases shows that COPD is the most frequent diagnosis. 
+The data was split into training and testing sets using the train_test_split function from Scikit. The adam optimizer is used to adapt the learning rate of the gradient descent process. The metric chosen was accuracy. The loss function I chose was categorical crossentropy which is commonly used in deep learning models for multi-class classification problems. It measures the difference between the model's predicted probabilities and the true labels. The distribution count of occurence of the different diseases shows that COPD is the most frequent diagnosis. 
 
 Distribution of classes:
 ![Figure_2](https://github.com/user-attachments/assets/16a8b7a5-758a-40f2-825a-2012f588c049)
