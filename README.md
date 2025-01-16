@@ -36,6 +36,4 @@ This project uses Python 3.7 and requires the installtion of the following packa
 
 # Scripts 
 
-Classification.py - contains the model implementation, data loading, and traning. 
-Inference.py - consists of an example of loading the model and running inference on example audio. 
-
+Classification.py - contains the model implementation, data loading, and traning.  <br /> Inference.py - consists of an example of loading the model and running inference on example audio.  <br /> 
